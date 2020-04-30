@@ -164,12 +164,7 @@ homebrew_casks:
 
   # Shell:
   - description: iTerm
-    name: iterm2-nightly
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Go2Shell
-    name: go2shell
+    name: iterm2
     # options:
     state: latest
     # accept_external_apps:
@@ -190,18 +185,8 @@ homebrew_casks:
     # options:
     state: latest
     # accept_external_apps:
-  - description: Google Chrome Canary
-    name: google-chrome-canary
-    # options:
-    state: latest
-    # accept_external_apps:
   - description: Firefox
     name: firefox
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Firefox Developer Edition
-    name: firefox-developer-edition
     # options:
     state: latest
     # accept_external_apps:
@@ -330,7 +315,7 @@ homebrew_casks:
   - description: Zoom.us
     name: zoomus
     # options:
-    state: latest
+    state: absent
     # accept_external_apps:
   - description: Discord
     name: discord
@@ -362,7 +347,7 @@ homebrew_casks:
     state: latest
     # accept_external_apps:
   - description: Microsoft Visual Studio Code
-    name: visual-studio-code-insiders
+    name: visual-studio-code
     # options:
     state: latest
     # accept_external_apps:
