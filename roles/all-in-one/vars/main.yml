@@ -41,27 +41,27 @@ homebrew_brews:
 
   # Development Tools:
   - description: git
-    brew: git
+    name: git
     # options:
     state: latest
   - description: git flow
-    brew: git-flow
+    name: git-flow
     # options:
     state: latest
   - description: Git Credential Manager
-    brew: git-credential-manager
+    name: git-credential-manager
     # options:
     state: latest
   - description: Node.js
-    brew: node
+    name: node
     # options:
     state: latest
   - description: Ruby
-    brew: ruby
+    name: ruby
     # options:
     state: latest
   - description: SQlite
-    brew: sqlite
+    name: sqlite
     # options:
     state: latest
 
