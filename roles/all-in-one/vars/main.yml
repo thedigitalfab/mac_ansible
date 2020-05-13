@@ -3,10 +3,12 @@ homebrew_prefix: /usr/local
 homebrew_clear_cache: false
 
 # Taps
-homebrew_taps: []
+homebrew_taps:
   # - name: varenc/ffmpeg                            # required
   #   url: https://github.com/varenc/homebrew-ffmpeg # optional
   #   state: present                                 # optional
+  - name: heroku/brew
+    state: present
 
 # Brews
 homebrew_brews: 
@@ -56,12 +58,12 @@ homebrew_brews:
     name: node
     # options:
     state: latest
-  - description: Ruby
-    name: ruby
+  - description: Yarn
+    name: yarn
     # options:
     state: latest
-  - description: SQlite
-    name: sqlite
+  - description: Yarn Completion
+    name: yarn-completion
     # options:
     state: latest
 
@@ -114,7 +116,10 @@ homebrew_brews:
     name: kubernetes-service-catalog-client
     # options:
     state: latest
-    Terraform:
+  - description: Heroku CLI
+    name: heroku
+    # options:
+    state: latest
 
   # Cloud CLI:
   - description: Amazon Web Services - CDK
@@ -199,7 +204,7 @@ homebrew_casks:
   # Microsoft Office 365:
   - description: Microsoft Office 365
     name: microsoft-office
-    # options:
+    options: --verbose
     state: latest
     # accept_external_apps:
   - description: Microsoft Teams
@@ -221,7 +226,7 @@ homebrew_casks:
   # Google G-Suite:
   - description: Google G-Suite App Engine
     name: googleappengine
-    # options:
+    options: --verbose
     state: latest
     # accept_external_apps:
   - description: Google G-Suite Hangouts
@@ -270,11 +275,11 @@ homebrew_casks:
     # accept_external_apps:
 
   # Design & Publishing:
-  # - description: Adobe Creative Cloud
-  #   name: adobe-creative-cloud
-  #   # options:
-  #   state: latest
-  #   # accept_external_apps:
+  - description: Adobe Creative Cloud
+    name: adobe-creative-cloud
+    # options:
+    state: latest
+    # accept_external_apps:
   - description: Adobe Creative Cloud - Cleaner Tool
     name: adobe-creative-cloud-cleaner-tool
     # options:
@@ -499,38 +504,6 @@ homebrew_casks:
     # accept_external_apps:
   - description: Teamviewer
     name: teamviewer
-    # options:
-    state: latest
-    # accept_external_apps:
-  
-  #Games:
-  - description: Steam
-    name: steam
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Shadow
-    name: shadow-beta
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Minecraft
-    name: minecraft
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Blizzard Battle.net
-    name: battle-net
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: League of Legends
-    name: league-of-legends
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Roblox
-    name: roblox
     # options:
     state: latest
     # accept_external_apps:

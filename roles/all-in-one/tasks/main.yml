@@ -35,6 +35,18 @@
     - Clear homebrew cache
   tags: [homebrew, configuration, install, update, test]
 
+# Ensure latest version of Homebrew Packages
+- name: install Homebrew Packages
+  homebrew:
+    name: "{{ item.name }}"
+    url: "{{ item.url | default(omit) }}"
+    state: "{{ item.state | default(omit) }}"
+    options: "{{ item.options | default(omit) }}"
+  with_items: "{{ homebrew_brews }}"
+  notify:
+    - Clear homebrew cache
+  tags: [homebrew, install, update]
+
 # Ensure latest version of Homebrew Casks Packages
 - name: install Homebrew Casks Packages
   homebrew_cask:
@@ -42,17 +54,6 @@
     url: "{{ item.url | default(omit) }}"
     state: "{{ item.state | default(omit) }}"
   with_items: "{{ homebrew_casks}}"
-  notify:
-    - Clear homebrew cache
-  tags: [homebrew, install, update]
-
-# Ensure latest version of Homebrew Packages
-- name: install Homebrew Packages
-  homebrew:
-    name: "{{ item.name }}"
-    url: "{{ item.url | default(omit) }}"
-    state: "{{ item.state | default(omit) }}"
-  with_items: "{{ homebrew_brews }}"
   notify:
     - Clear homebrew cache
   tags: [homebrew, install, update]
