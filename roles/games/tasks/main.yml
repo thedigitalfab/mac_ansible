@@ -1,0 +1,36 @@
+---
+
+# Check if Homebrew is installed
+- name: Check if Homebrew is installed
+  stat:
+    path: /usr/local/bin/brew
+  register: homebrew_installed
+  changed_when: false
+  check_mode: no
+  tags: [homebrew, configuration, install]
+
+# Install Homebrew binaries
+- name: Install Homebrew Binaries
+  command: yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  args:
+    creates: /usr/local/bin/brew
+  when: not homebrew_installed.stat.exists
+  tags: [homebrew, configuration, install]
+
+# Update Homebrew binaries & Upgrade Packages
+- name: Update Homebrew Binaries
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+  tags: [homebrew, configuration, install, update]
+
+# Ensure latest version of Homebrew Casks Packages
+- name: install Homebrew Casks Packages
+  homebrew_cask:
+    name: "{{ item.name }}"
+    url: "{{ item.url | default(omit) }}"
+    state: "{{ item.state | default(omit) }}"
+  with_items: "{{ homebrew_casks}}"
+  notify:
+    - Clear homebrew cache
+  tags: [homebrew, install, update]

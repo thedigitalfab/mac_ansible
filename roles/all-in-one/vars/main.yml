@@ -1,0 +1,530 @@
+---
+homebrew_prefix: /usr/local
+homebrew_clear_cache: false
+
+# Taps
+homebrew_taps:
+  # - name: varenc/ffmpeg                            # required
+  #   url: https://github.com/varenc/homebrew-ffmpeg # optional
+  #   state: present                                 # optional
+  - name: heroku/brew
+    state: present
+
+# Brews
+homebrew_brews: 
+  # - description: Tesseract                         # optional
+  #   name: tesseract                                # required
+  #   options: all-languages                         # optional
+  #   state: present                                 # optional
+  
+  # Security:
+  - description: SSH Copy ID
+    name: ssh-copy-id
+    # options:
+    state: latest
+  
+  # Shell:
+  - description: Fish Shell
+    name: fish
+    # options:
+    state: latest
+  - description: Nano
+    name: nano
+    # options:
+    state: latest
+  - description: SSH Vault
+    name: ssh-vault
+    # options:
+    state: latest
+  - description: SSHuttle
+    name: sshuttle
+    # options:
+    state: latest
+
+  # Development Tools:
+  - description: git
+    name: git
+    # options:
+    state: latest
+  - description: git flow
+    name: git-flow
+    # options:
+    state: latest
+  - description: Git Credential Manager
+    name: git-credential-manager
+    # options:
+    state: latest
+  - description: Node.js
+    name: node
+    # options:
+    state: latest
+  - description: Yarn
+    name: yarn
+    # options:
+    state: latest
+  - description: Yarn Completion
+    name: yarn-completion
+    # options:
+    state: latest
+
+  # Infra-as-Code
+  - description: Ansible
+    name: ansible
+    # options:
+    state: latest
+  - description: Terraform
+    name: terraform
+    # options:
+    state: latest
+  - description: Terraform Docs
+    name: terraform-docs
+    # options:
+    state: latest
+  - description: Terraform Inventory
+    name: terraform-inventory 
+    # options:
+    state: latest
+  - description: Terraform Provisioner for Ansible
+    name: terraform-provisioner-ansible
+    # options:
+    state: latest
+  - description: Terragrunt
+    name: terragrunt
+    # options:
+    state: latest
+  - description: Rancher CLI
+    name: rancher-cli
+    # options:
+    state: latest
+  - description: Rancher Compose
+    name: rancher-compose
+    # options:
+    state: latest
+  - description: Helm
+    name: helm
+    # options:
+    state: latest
+  - description: Kubernetes for Amazon Web Services
+    name: kube-aws
+    # options:
+    state: latest
+  - description: Kubernetes CLI
+    name: kubernetes-cli
+    # options:
+    state: latest
+  - description: Kubernetes Service Catalog
+    name: kubernetes-service-catalog-client
+    # options:
+    state: latest
+  - description: Heroku CLI
+    name: heroku
+    # options:
+    state: latest
+
+  # Cloud CLI:
+  - description: Amazon Web Services - CDK
+    name: aws-cdk
+    # options:
+    state: latest
+  - description: Amazon Web Services - Elastic Beans
+    name: aws-elasticbeanstalk
+    # options:
+    state: latest
+  - description: Amazon Web Services - Google Authenticator
+    name: aws-google-auth
+    # options:
+    state: latest
+  - description: Amazon Web Services - IAM Authenticator
+    name: aws-iam-authenticator
+    # options:
+    state: latest
+  - description: Amazon Web Services - Keychain
+    name: aws-keychain
+    # options:
+    state: latest
+  - description: Amazon Web Services - Okta Connector
+    name: aws-okta
+    # options:
+    state: latest
+  - description: Amazon Web Services - Shell
+    name: aws-shell
+    # options:
+    state: latest
+  - description: Amazon Web Services - CLI
+    name: awscli
+    # options:
+    state: latest
+  - description: Amazon Web Services - Cloud Watch
+    name: cloud-watch
+    # options:
+    state: latest
+
+# Casks
+homebrew_casks:
+  # - description: Google Chrome                     # optional
+  #   name: google-chrome                            # required
+  #   options: appdir=/Applications                  # optional
+  #   state: present                                 # optional
+  #   accept_external_apps: true                     # optional
+
+  # Shell:
+  - description: iTerm
+    name: iterm2
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Microsoft Powershell
+    name: powershell
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: SSH Tunnel Manager
+    name: ssh-tunnel-manager
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Web Browsers:
+  - description: Google Chrome
+    name: google-chrome
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Firefox
+    name: firefox
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Opera
+    name: opera
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Microsoft Office 365:
+  - description: Microsoft Office 365
+    name: microsoft-office
+    options: --verbose
+    state: latest
+    # accept_external_apps:
+  - description: Microsoft Teams
+    name: microsoft-teams
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Microsoft Yammer
+    name: yammer
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Microsoft Skype
+    name: skype
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Google G-Suite:
+  - description: Google G-Suite App Engine
+    name: googleappengine
+    options: --verbose
+    state: latest
+    # accept_external_apps:
+  - description: Google G-Suite Hangouts
+    name: google-hangouts
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Google G-Suite Chat
+    name: google-chat
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Google G-Suite Drive
+    name: google-drive-file-stream
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Google G-Suite Backup & Sync
+    name: google-backup-and-sync
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Google G-Suite Earth Pro
+    name: google-earth-pro
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Google G-Suite Cloud
+    name: google-cloud-sdk
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Cloud Drive:
+  - description: DropBox
+    name: dropbox
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Office Tools
+  - description: Grammarly
+    name: grammarly
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Design & Publishing:
+  - description: Adobe Creative Cloud
+    name: adobe-creative-cloud
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Adobe Creative Cloud - Cleaner Tool
+    name: adobe-creative-cloud-cleaner-tool
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Inkscape
+    name: inkscape
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Sketch App
+    name: sketch
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Blender
+    name: Blender
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Scribus
+    name: scribus
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Google Web Designer
+    name: google-web-designer
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Communication & Collaboration:
+  - description: WhatsApp
+    name: whatsapp
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Zoom.us
+    name: zoomus
+    # options:
+    state: absent
+    # accept_external_apps:
+  - description: Discord
+    name: discord
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Slack
+    name: slack
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Development Tools:
+  - desciption: Github Desktop
+    name: github
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Dash
+    name: dash
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Editors & IDE:
+  - description: Microsoft Visual Studio
+    name: visual-studio
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Microsoft Visual Studio Code
+    name: visual-studio-code
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Atom
+    name: atom
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Infra-as-Code
+  - description: Docker
+    name: docker
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Kitematic
+    name: kitematic
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Kube Cluster
+    name: kube-cluster
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Kubernetic
+    name: kubernetic
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Cloud CLI:
+  - description: Amazon Web Services - Vault
+    name: aws-vault
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: IBM Cloud - CLI
+    name: ibm-cloud-cli
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Mobile SDK:
+  - description: Android SDK
+    name: android-sdk
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Android SDK Platform-Tools
+    name: android-platform-tools
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Android Studio
+    name: android-studio
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: React Native Debugger
+    name: react-native-debugger
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Fastlane
+    name: fastlane
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Viewers:
+  - description: Amazon Kindle
+    name: kindle
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Adobe Digital editions
+    name: adobe-digital-editions
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Hypervisors:
+  - description: VirtualBox
+    name: virtualbox
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: VirtualBox - Extension Pack
+    name: virtualbox-extension-pack
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Vmware Fusion
+    name: vmware-fusion
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Vagrant
+    name: vagrant
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Vagrant - Vagrant Manager
+    name: vagrant-manager
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Vagrant - VMware Utility
+    name: vagrant-vmware-utility
+    # options:
+    state: latest
+    # accept_external_apps:
+  
+  #Entertainment:
+  - description: Spotify
+    name: spotify
+    # options:
+    state: latest
+    # accept_external_apps:
+  
+  # Security:
+  - description: GPG Suite
+    name: gpg-suite
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Dashlane
+    name: dashlane
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Avast Security
+    name: avast-security
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Express VPN
+    name: expressvpn
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Remote Administration:
+  - description: Remote Desktop Manager
+    name: remote-desktop-manager
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Teamviewer
+    name: teamviewer
+    # options:
+    state: latest
+    # accept_external_apps:
+
+# MAS
+mas_applications:
+  # - name: google-chrome                            # optional
+  #   id: 40923498                                   # required  
+  - name: Xcode (11.4)
+    id: 497799835
+  - name: Pages (10.0)
+    id: 409201541
+  - name: Numbers (10.0)
+    id: 409203825
+  - name: Keynote (10.0)
+    id: 409183694
+  - name: GarageBand (10.3.4)
+    id: 682658836
+  - name: iMovie (10.1.14)
+    id: 408981434
+  - name: Microsoft To Do (2.14)
+    id: 1274495053
+  - name: Speedtest (1.10)
+    id: 1153157709
