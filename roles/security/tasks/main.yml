@@ -58,10 +58,6 @@
     - Clear homebrew cache
   tags: [homebrew, install, update]
 
-# Connect to Apple App Store with credentials
-- pause:
-    prompt: "Connect to App Store with your credentials, then press 'Enter'"
-
 # Ensure MAS is installed and up-to-date
 - name: Ensure MAS is installed.
   homebrew: 

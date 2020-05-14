@@ -1,0 +1,113 @@
+---
+homebrew_prefix: /usr/local
+homebrew_clear_cache: false
+
+# Taps
+homebrew_taps: []
+  # - name: varenc/ffmpeg                            # required
+  #   url: https://github.com/varenc/homebrew-ffmpeg # optional
+  #   state: present                                 # optional
+
+# Brews
+homebrew_brews: 
+  # - description: Tesseract                         # optional
+  #   name: tesseract                                # required
+  #   options: all-languages                         # optional
+  #   state: present                                 # optional
+  
+  # Development Tools:
+  - description: git
+    name: git
+    # options:
+    state: latest
+  - description: git flow
+    name: git-flow
+    # options:
+    state: latest
+  - description: Git Credential Manager
+    name: git-credential-manager
+    # options:
+    state: latest
+  - description: Node.js
+    name: node
+    # options:
+    state: latest
+  - description: Yarn
+    name: yarn
+    # options:
+    state: latest
+  - description: Yarn Completion
+    name: yarn-completion
+    # options:
+    state: latest
+
+# Casks
+homebrew_casks:
+  # - description: Google Chrome                     # optional
+  #   name: google-chrome                            # required
+  #   options: appdir=/Applications                  # optional
+  #   state: present                                 # optional
+  #   accept_external_apps: true                     # optional
+
+  # Development Tools:
+  - desciption: Github Desktop
+    name: github
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Dash
+    name: dash
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Editors & IDE:
+  - description: Microsoft Visual Studio
+    name: visual-studio
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Microsoft Visual Studio Code
+    name: visual-studio-code
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Atom
+    name: atom
+    # options:
+    state: latest
+    # accept_external_apps:
+
+  # Mobile SDK:
+  - description: Android SDK
+    name: android-sdk
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Android SDK Platform-Tools
+    name: android-platform-tools
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Android Studio
+    name: android-studio
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: React Native Debugger
+    name: react-native-debugger
+    # options:
+    state: latest
+    # accept_external_apps:
+  - description: Fastlane
+    name: fastlane
+    # options:
+    state: latest
+    # accept_external_apps:
+
+# MAS
+mas_applications:
+  # - name: google-chrome                            # optional
+  #   id: 40923498                                   # required  
+  - name: Xcode (11.4)
+    id: 497799835

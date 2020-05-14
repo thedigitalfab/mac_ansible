@@ -60,6 +60,3 @@ homebrew_casks:
     state: latest
     # accept_external_apps:
 
-# MAS
-mas_applications: []
-
