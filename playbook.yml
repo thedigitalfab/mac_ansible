@@ -3,7 +3,9 @@
   connection: local
   roles:
     - shell
+    - Browsers
     - all-in-one
+    - Office365
     - entertainment
     - security
     - games
