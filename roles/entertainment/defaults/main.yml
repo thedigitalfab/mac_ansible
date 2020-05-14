@@ -1,0 +1,31 @@
+---
+# Default Variable values for Homebrew:
+homebrew_prefix: /usr/local
+homebrew_clear_cache: false
+
+# Taps
+homebrew_taps: []
+  # - name: varenc/ffmpeg                            # required
+  #   url: https://github.com/varenc/homebrew-ffmpeg # optional
+  #   state: present                                 # optional
+
+# Brews
+homebrew_brews: []
+  # - name: tesseract                                # required
+  #   options: all-languages                         # optional
+  #   state: present                                 # optional
+
+# Casks
+homebrew_casks: []
+  # - name: google-chrome                            # required
+  #   options: appdir=/Applications                  # optional
+  #   state: present                                 # optional
+  #   accept_external_apps: true                     # optional
+
+# MAS
+mas_applications: []
+  # - name: google-chrome                            # optional
+  #   id: 40923498                                   # required
+  #   options: appdir=/Applications                  # optional
+  #   state: present                                 # optional
+  #   accept_external_apps: true                     # optional

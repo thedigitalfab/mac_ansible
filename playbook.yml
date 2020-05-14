@@ -2,5 +2,8 @@
   hosts: localhost
   connection: local
   roles:
+    - shell
     - all-in-one
+    - entertainment
+    - security
     - games

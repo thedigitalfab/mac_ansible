@@ -9,7 +9,7 @@ homebrew_taps: []
   #   state: present                                 # optional
 
 # Brews
-homebrew_brews: []
+homebrew_brews: [] 
   # - description: Tesseract                         # optional
   #   name: tesseract                                # required
   #   options: all-languages                         # optional
@@ -23,43 +23,18 @@ homebrew_casks:
   #   state: present                                 # optional
   #   accept_external_apps: true                     # optional
 
-  #Games:
-  - description: Steam
-    name: steam
+  #Entertainment:
+  - description: Spotify
+    name: spotify
     # options:
     state: latest
     # accept_external_apps:
-  - description: Shadow
-    name: shadow-beta
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Minecraft
-    name: minecraft
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Guild Wars 2
-    name: guild-wars2
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Blizzard Battle.net
-    name: battle-net
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: League of Legends
-    name: league-of-legends
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Roblox
-    name: roblox
-    # options:
-    state: latest
-    # accept_external_apps:
-
+  
 # MAS
-mas_applications: []
-
+mas_applications:
+  # - name: google-chrome                            # optional
+  #   id: 40923498                                   # required  
+  - name: GarageBand (10.3.4)
+    id: 682658836
+  - name: iMovie (10.1.14)
+    id: 408981434

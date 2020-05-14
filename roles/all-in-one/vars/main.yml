@@ -17,30 +17,6 @@ homebrew_brews:
   #   options: all-languages                         # optional
   #   state: present                                 # optional
   
-  # Security:
-  - description: SSH Copy ID
-    name: ssh-copy-id
-    # options:
-    state: latest
-  
-  # Shell:
-  - description: Fish Shell
-    name: fish
-    # options:
-    state: latest
-  - description: Nano
-    name: nano
-    # options:
-    state: latest
-  - description: SSH Vault
-    name: ssh-vault
-    # options:
-    state: latest
-  - description: SSHuttle
-    name: sshuttle
-    # options:
-    state: latest
-
   # Development Tools:
   - description: git
     name: git
@@ -167,62 +143,6 @@ homebrew_casks:
   #   state: present                                 # optional
   #   accept_external_apps: true                     # optional
 
-  # Shell:
-  - description: iTerm
-    name: iterm2
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Microsoft Powershell
-    name: powershell
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: SSH Tunnel Manager
-    name: ssh-tunnel-manager
-    # options:
-    state: latest
-    # accept_external_apps:
-
-  # Web Browsers:
-  - description: Google Chrome
-    name: google-chrome
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Firefox
-    name: firefox
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Opera
-    name: opera
-    # options:
-    state: latest
-    # accept_external_apps:
-
-  # Microsoft Office 365:
-  - description: Microsoft Office 365
-    name: microsoft-office
-    options: --verbose
-    state: latest
-    # accept_external_apps:
-  - description: Microsoft Teams
-    name: microsoft-teams
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Microsoft Yammer
-    name: yammer
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Microsoft Skype
-    name: skype
-    # options:
-    state: latest
-    # accept_external_apps:
-
   # Google G-Suite:
   - description: Google G-Suite App Engine
     name: googleappengine
@@ -316,11 +236,6 @@ homebrew_casks:
     name: whatsapp
     # options:
     state: latest
-    # accept_external_apps:
-  - description: Zoom.us
-    name: zoomus
-    # options:
-    state: absent
     # accept_external_apps:
   - description: Discord
     name: discord
@@ -436,16 +351,6 @@ homebrew_casks:
     # accept_external_apps:
 
   # Hypervisors:
-  - description: VirtualBox
-    name: virtualbox
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: VirtualBox - Extension Pack
-    name: virtualbox-extension-pack
-    # options:
-    state: latest
-    # accept_external_apps:
   - description: Vmware Fusion
     name: vmware-fusion
     # options:
@@ -467,35 +372,6 @@ homebrew_casks:
     state: latest
     # accept_external_apps:
   
-  #Entertainment:
-  - description: Spotify
-    name: spotify
-    # options:
-    state: latest
-    # accept_external_apps:
-  
-  # Security:
-  - description: GPG Suite
-    name: gpg-suite
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Dashlane
-    name: dashlane
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Avast Security
-    name: avast-security
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Express VPN
-    name: expressvpn
-    # options:
-    state: latest
-    # accept_external_apps:
-
   # Remote Administration:
   - description: Remote Desktop Manager
     name: remote-desktop-manager
@@ -520,11 +396,5 @@ mas_applications:
     id: 409203825
   - name: Keynote (10.0)
     id: 409183694
-  - name: GarageBand (10.3.4)
-    id: 682658836
-  - name: iMovie (10.1.14)
-    id: 408981434
-  - name: Microsoft To Do (2.14)
-    id: 1274495053
   - name: Speedtest (1.10)
     id: 1153157709

@@ -9,11 +9,25 @@ homebrew_taps: []
   #   state: present                                 # optional
 
 # Brews
-homebrew_brews: []
+homebrew_brews: 
   # - description: Tesseract                         # optional
   #   name: tesseract                                # required
   #   options: all-languages                         # optional
   #   state: present                                 # optional
+  
+  # Security:
+  - description: SSH Copy ID
+    name: ssh-copy-id
+    # options:
+    state: latest
+  - description: SSH Vault
+    name: ssh-vault
+    # options:
+    state: latest
+  - description: SSHuttle
+    name: sshuttle
+    # options:
+    state: latest
 
 # Casks
 homebrew_casks:
@@ -23,43 +37,34 @@ homebrew_casks:
   #   state: present                                 # optional
   #   accept_external_apps: true                     # optional
 
-  #Games:
-  - description: Steam
-    name: steam
+  # Security:
+  - description: SSH Tunnel Manager
+    name: ssh-tunnel-manager
     # options:
     state: latest
     # accept_external_apps:
-  - description: Shadow
-    name: shadow-beta
+  - description: GPG Suite
+    name: gpg-suite
     # options:
     state: latest
     # accept_external_apps:
-  - description: Minecraft
-    name: minecraft
+  - description: Dashlane
+    name: dashlane
     # options:
     state: latest
     # accept_external_apps:
-  - description: Guild Wars 2
-    name: guild-wars2
+  - description: Avast Security
+    name: avast-security
     # options:
     state: latest
     # accept_external_apps:
-  - description: Blizzard Battle.net
-    name: battle-net
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: League of Legends
-    name: league-of-legends
-    # options:
-    state: latest
-    # accept_external_apps:
-  - description: Roblox
-    name: roblox
+  - description: Express VPN
+    name: expressvpn
     # options:
     state: latest
     # accept_external_apps:
 
 # MAS
 mas_applications: []
-
+  # - name: google-chrome                            # optional
+  #   id: 40923498                                   # required
